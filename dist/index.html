@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Giphy Viewer</title>
+<link rel="stylesheet" href="/giphy-viewer.e31bb0bc.css"></head>
+<body>
+  <div class="columns">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <div class="card has-background-white-ter">
+        <div class="card-header">
+          <h2 class="block card-header-title title is-2">Giphy Viewer</h2>
+        </div>
+        <div class="card-content">
+          <form id="giphy-search" action="">
+            <div class="field">
+              <label class="label">Search for...</label>
+              <div class="control">
+                <input id="search" class="input is-rounded is-primary" type="text" placeholder="Search term...">
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <label class="label">Limit Number of Search Results:</label>
+                <div class="select is-rounded is-primary">
+                  <select id="limit">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <button type="submit" class="button is-primary is-fullwidth is-rounded" style="display:block">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="error" class="scalable">
+        <div class="message is-danger">
+          <div class="message-header">
+            <p>Error</p>
+          </div>
+          <div class="message-body">
+            You have not entered a search term. Please try again.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="trending"></div>
+        <div class="columns" id="loadMoreContainer">
+          <div id="prevButton" class="column is-half"></div>
+          <div id="nextButton" class="column is-half"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/giphy-viewer.e31bb0bc.js"></script>
+</body>
+</html>

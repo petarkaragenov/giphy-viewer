@@ -1,0 +1,44 @@
+.card {
+  margin-top: 2em;
+}
+
+.card-header-title {
+  justify-content: center;
+}
+
+#trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ .scalable {
+  transform: scale(0, 0);
+  transition: 0.4s;
+}
+
+.active {
+  transform: scale(1, 1);
+}
+
+.copy {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.image-container {
+  display: flex;
+  position: relative;
+  margin: 0.4em;
+}
+
+.image-container:hover .copy {
+  opacity: 1;
+}

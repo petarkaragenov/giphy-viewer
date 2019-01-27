@@ -1,0 +1,24 @@
+{
+  "name": "giphy-viewer",
+  "version": "1.0.0",
+  "description": "A tiny app for viewing Giphies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petarkaragenov/giphy-viewer.git"
+  },
+  "author": "Petar Karagenov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petarkaragenov/giphy-viewer/issues"
+  },
+  "homepage": "https://github.com/petarkaragenov/giphy-viewer#readme",
+  "dependencies": {
+    "bulma": "^0.7.2",
+    "dotenv": "^6.2.0",
+    "parcel-bundler": "^1.11.0"
+  }
+}
